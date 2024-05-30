@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="Recommendations.css" />
+    <title>Song of the day!</title>
+  </head>
+  <body>
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SONG OF THE DAY!</h1>
+
+    <header>
+        <h1><a href="FrontPage.html">Musify</a></h1>
+      </header>
+      
+
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+          <h4 id="title">Guillotine - Death Grips</h4>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+      
+        <audio src="Death Grips - Exmilitary - 2 - Guillotine.mp3" id="audio"></audio>
+      
+        <div class="img-container">
+          <img src="Death-Grips-Exmilitary.jpg" alt="music-cover" id="cover" />
+        </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      
+=        <div class="volume-container">
+          <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider" id="volume-slider">
+        </div>
+      </div>
+      
+    <script src="Recommendations.js"></script>
+  </body>
+</html>

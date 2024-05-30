@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorite Songs</title>
+<link rel="stylesheet" href="Table.css">
+<script src="Table.js"></script>
+</head>
+
+
+<body style="background-image: url('Background.jpeg');">
+    
+    <header>
+        <h1>
+            <a href="FrontPage.html">Musify</a>
+        </h1>
+    </header>
+
+
+<div class="content">
+    <h2 style="text-align: center;">Add Your Favorite Songs</h2>
+
+    <input type="text" id="songName" placeholder="Enter song name">
+    <input type="text" id="artistName" placeholder="Enter artist name">
+    <button class="button" onclick="addSong()">Add Song</button>
+    <button class="button" onclick="removeSong()">Remove Song</button>
+    <button class="button" onclick="generateLink()">Share Table</button>
+    <button class="button" onclick="clearAll()">Clear All</button>
+
+    <table id="songTable">
+        <tr>
+            <th>#</th>
+            <th>Song Name</th>
+            <th>Artist</th>
+        </tr>
+    </table>
+
+    <div id="shareLink" style="display: none;"></div>
+</div>
+
+
+
+</body>
+</html>

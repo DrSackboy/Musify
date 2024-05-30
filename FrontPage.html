@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify: Your music hub</title>
+    <link rel="stylesheet" href="FrontPage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1>
+        <a href="FrontPage.html">Musify</a>
+    </h1>
+
+    <div style="height: 5px; background: linear-gradient(to bottom, black, #5b103b);"></div>
+
+    <div class="navbar">
+        <a href="TopSongs.html">Top Songs</a>
+        <a href="TopArtists.html">Top Artists</a>
+        <a href="PopularArea.html">Popular in your area</a>
+        <a href="Recommendations.html">Recommendations</a>
+        <a href="Table.html">Table</a>
+    </div>
+
+    <div class = "FrontPage" style="display: flex;">
+
+      <p style="flex: 1; margin: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">At Musify, we aim to provide an immersive audio experience that captivates and engages our visitors. Whether you're a music enthusiast, a podcast aficionado, or simply seeking auditory inspiration, our platform offers a diverse range of audio content to satisfy every taste and preference. Explore our curated collection of audio tracks, podcasts, soundscapes, and more, carefully selected to deliver quality and variety. With user-friendly navigation and seamless integration, discovering your next favorite audio experience has never been easier.
+
+          Immerse yourself in the world of sound with our intuitive audio player, equipped with customizable controls that empower you to tailor your listening experience to perfection. From soothing melodies to thought-provoking discussions, our platform is your gateway to a realm of auditory delight.
+          
+          Join our vibrant community of audio enthusiasts, where you can connect, share, and discover new audio gems together. Whether you're a creator looking to showcase your talent or a listener seeking inspiration, Musify welcomes you with open arms.
+          
+          Embark on a journey of auditory exploration with us. Start discovering your next favorite audio experience today.</p>
+
+
+      <img src="music.jpg" alt="Music Image" style="margin: 10px; width: 1000px;">
+
+
+  </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.FrontPage').css('opacity', 0).animate({opacity: 1}, 1500);
+        });
+    </script>
+
+</body>
+
+</html>
+
